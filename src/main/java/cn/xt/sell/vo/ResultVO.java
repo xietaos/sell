@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * @Auther: Administrator
  * @Date: 2018/6/29 16:47
- * @Description:
+ * @Description: http请求返回的最外层对象
  */
 @Data
 public class ResultVO<T> {

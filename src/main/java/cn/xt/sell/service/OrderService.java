@@ -1,6 +1,5 @@
 package cn.xt.sell.service;
 
-import cn.xt.sell.dataobject.OrderDetail;
 import cn.xt.sell.dto.OrderDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -29,5 +28,8 @@ public interface OrderService {
 
     /** 支付订单. */
     OrderDTO paid(OrderDTO orderDTO);
+
+    /** 查询订单列表. */
+    Page<OrderDTO> findList(Pageable pageable);
 
 }
